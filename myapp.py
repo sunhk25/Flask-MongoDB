@@ -25,7 +25,8 @@ def record(id):
 @app.route('/users/')
 def users():
     users = User.objects.all()
-    return render_template('users.html', u=users)
+    return users
+    # return render_template('users.html', u=users)
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
