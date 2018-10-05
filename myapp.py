@@ -4,6 +4,7 @@ from flask_bcrypt import Bcrypt
 from flaskext.csrf import csrf
 import logging
 # fix mongoDB error next, OK!
+# master fixed !
 
 app = Flask(__name__)
 app.config.from_object('settings')
